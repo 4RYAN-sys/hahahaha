@@ -57,11 +57,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
-.social-icons {
-  margin-top: 1rem;
-}
-
-.social-icons a {
+a {
   color: #fff;
   font-size: 1.5rem;
   margin: 0 0.5rem;
