@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Aryan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <img src="gw.jpg" alt="Foto Diri" class="profile-photo">
-            <h1>Aryan Pratama Susanto</h1>
-            <p>Pelajar | Calon Programmer </p>
-        </div>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <div class="container">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah manusia biasa dan pelajar yang sedang belajar RPL di SMKN 8 malang.</p>
-        </div>
-    </section>
+  <header>
+    <div class="container">
+      <img src="gw.jpg" alt="Foto Aryan" class="profile-photo" />
+      <h1>Aryan Pratama Susanto</h1>
+      <p>Pelajar | Calon Programmer</p>
+      <div class="sosmed">
+      <a href="https://github.com/4RYAN-sys" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    </div>
+  </header>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Hubungi </h2>
-            <button onclick="showContact()"> Kontak</button>
-            <p id="contact-info" style="display: none;">Email: Aryansusanto@gmail.com<br>No HP: 0888888888</p>
-        </div>
-    </section>
+  <section id="about">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah manusia biasa dan pelajar yang sedang belajar RPL di SMKN 8 Malang.
+         Saya lahir di malang dan tinggal di malang.</p>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Aryan Pratama. Semua hak dilindungi.</p>
-                <a href="https://github.com/4RYAN-sys" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        
-    </footer>
+  <section id="contact">
+    <div class="container">
+      <h2>Hubungi Saya</h2>
+      <button onclick="showContact()">Tampilkan Kontak</button>
+      <div id="contact-info" class="hidden">
+        <p>Email: Aryansusanto@gmail.com</p>
+        <p>No HP: 0888888888</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Aryan Pratama. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
