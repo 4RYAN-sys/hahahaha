@@ -15,5 +15,6 @@ document.getElementById("toggle-mode").onclick = () => {
 
 // Card Alert
 document.querySelectorAll(".card").forEach(c =>
-  c.onclick = () => alert(`Kamu klik: ${c.querySelector("h3").textContent}\n\nFitur detail coming soon 😎`)
+  c.onclick = () => alert(` ${c.querySelector("h3").textContent}\n\nFitur detail coming soon 😎`)
 );
+
