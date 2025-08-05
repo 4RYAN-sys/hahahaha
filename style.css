@@ -57,7 +57,7 @@ main {
   max-width: 120px;
   min-width: 70px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 3px solid var(--accent-color);
   object-fit: cover;
   margin-bottom: 15px;
@@ -158,3 +158,4 @@ body.light footer { color: #999; }
   .card-container { grid-template-columns: 1fr; }
   .socials a { font-size: 1.2em; margin: 0 8px; }
 }
+
