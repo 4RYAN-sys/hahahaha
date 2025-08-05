@@ -1,20 +1,20 @@
-// Typewriter Effect
+// Ngetik teks
 let i = 0, txt = "Hi! Saya Aryan Pratama 👋", speed = 75;
 (function type() {
   if (i < txt.length) {
-    document.getElementById("typewriter").textContent += txt.charAt(i++);
+    document.getElementById("typewriter").textContent += txt[i++];
     setTimeout(type, speed);
   }
 })();
 
-// Toggle Mode
-document.getElementById("toggle-mode").onclick = () => {
+// Dark/Light mode toggle
+const toggleBtn = document.getElementById("toggle-mode");
+toggleBtn.onclick = () => {
   document.body.classList.toggle("light");
-  toggleMode.textContent = document.body.classList.contains("light") ? "🌑" : "🌙";
+  toggleBtn.textContent = document.body.classList.contains("light") ? "🌑" : "🌙";
 };
 
-// Card Alert
-document.querySelectorAll(".card").forEach(c =>
-  c.onclick = () => alert(` ${c.querySelector("h3").textContent}\n\nFitur detail coming soon 😎`)
+// Klik kartu -> alert
+document.querySelectorAll(".card").forEach(card =>
+  card.onclick = () => alert(` ${card.querySelector("h3").textContent}`)
 );
-
