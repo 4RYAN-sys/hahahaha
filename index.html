@@ -3,58 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Aryan</title>
+  <title>Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-pic"></div>
+      <h2>Aryan Pratama</h2>
+      <p class="role">Calon Programer</p>
+      <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('portfolio')">Portfolio</button>
+        <button onclick="showSection('contact')">Contact</button>
+      </nav>
+    </aside>
 
-  <nav>
-    <ul>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-  </nav>
+    <main class="content">
+      <section id="home">
+        <h1>Hi!<br> Saya <span>Aryan Pratama</span></h1>
+        <p>Selamat datang di website portofolio saya. Saya adalah seorang pelajar di SMKN 8 Malang.</p>
+      </section>
 
-  <header>
-    <div class="container">
-      <img src="gw.jpg" alt="Foto Aryan" class="profile-photo" />
-      <h1>Aryan Pratama Susanto</h1>
-      <p>Pelajar | Calon Programmer</p>
-      <div class="sosmed">
-      <a href="https://github.com/4RYAN-sys" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-    </div>
-  </header>
+      <section id="about" style="display:none">
+        <h2>Tentang Saya</h2>
+        <p>Saya suka gaming, dengar musik dan nonton film</p>
+      </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>Tentang Saya</h2>
-      <p>Saya adalah manusia biasa dan pelajar yang sedang belajar RPL di SMKN 8 Malang.
-         Saya lahir di malang dan tinggal di malang. Saya punya motto "JANGAN LUPA BERNAFAS". 
-         Hobi saya Gaming, nonton film, dengar musik. </p>
-    </div>
-  </section>
+      <section id="portfolio" style="display:none">
+        <h2>Portofolio</h2>
+        <p>Projek-projek saya bisa dilihat di GitHub.</p>
+        <a href="https://github.com/4RYAN-sys" target="_blank">Kunjungi GitHub Saya</a>
+      </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Hubungi Saya</h2>
-      <button onclick="showContact()">Tampilkan Kontak</button>
-      <div id="contact-info" class="hidden">
-        <p>Email: Aryansusanto@gmail.com</p>
-        <p>No HP: 0888888888</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Aryan Pratama. Semua hak dilindungi.</p>
-    </div>
-  </footer>
+      <section id="contact" style="display:none">
+        <h2>Kontak Saya</h2>
+        <ul>
+          <li>Email: <a href="mailto:aryan@gmail.com">draconiczero229@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 8567868762</a></li>
+          <li>GitHub: <a href="https://github.com/4RYAN-sys" target="_blank">4RYAN-sys</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
