@@ -3,30 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Ane</title>
+  <title>Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-    <section class="intro">
-      <img src="gw.jpg" alt="Foto Aryan" class="profile" />
-      <h1>Hi! Saya <span>Aryan Pratama Susabto</span> 👋</h1>
-      <p class="desc">Selamat datang di website portofolio saya. Saya adalah seorang pelajar di <strong>SMKN 8 Malang</strong> yang sedang belajar dan berkembang di dunia pemrograman.</p>
-      <blockquote>"Teruslah berjuang karena ada yang menunggu keberhasilanmu!"</blockquote>
-    </section>
+  <!-- Tombol Dark/Light Mode -->
+  <button id="toggle-mode">🌙</button>
 
-    <section class="content">
-      <h2>Website Portofolio</h2>
-      <p>Website ini dibuat dengan HTML, CSS, dan JavaScript untuk menampilkan identitas dan karya saya.</p>
-      <div class="icons">
-        <a href="https://wa.me/085746868762"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://github.com/4RYAN-sys"><i class="fab fa-github"></i></a>
-        <a href="mailto:dragoniczero229@gmail.com"><i class="fas fa-envelope"></i></a>
+  <main>
+    <img src="gw.jpg" alt="profile" class="pp" />
+    <h1><span id="typewriter"></span></h1>
+
+    <p class="desc">
+      Saya Aryan Pratama Susanto, pelajar SMKN 8 Malang yang belajar di jurusan RPL.
+    </p>
+
+    <p class="quote">"TERUS BERJUANG KARENA ADA YANG MENUNGGU KEBERHASILANMU!!."</p>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Website Portofolio</h3>
+        <p>Dibuat pakai HTML, CSS, dan JS. Showcase karya dan info tentang saya.</p>
       </div>
-    </section>
+      <div class="card">
+        <h3>Desain UI/UX</h3>
+        <p>Mockup & wireframe aplikasi pakai Figma dan Balsamiq.</p>
+      </div>
+    </div>
 
-    <footer>&copy; 2025 Aryan Pratama</footer>
+    <div class="socials">
+      <a href="https://wa.me/6285746868762" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/4RYAN-sys" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:draconiczero229@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <footer>
+      &copy; 2025 Aryan Pratama. All rights reserved.
+    </footer>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
