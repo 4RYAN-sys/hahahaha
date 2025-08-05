@@ -3,57 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" />
+  <title>Portofolio Aryan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="profile-pic"></div>
-      <h2>Aryan Pratama</h2>
-      <p class="role">Calon Programer</p>
-      <nav>
-        <button onclick="showSection('home')">Home</button>
-        <button onclick="showSection('about')">About</button>
-        <button onclick="showSection('portfolio')">Portfolio</button>
-        <button onclick="showSection('contact')">Contact</button>
-      </nav>
-    </aside>
+  <aside>
+    <img src="gw.jpg" alt="profile" />
+    <h2>Aryan Pratama</h2>
+    <p>Calon Programmer</p>
 
-    <main class="content">
-      <section id="home">
-        <h1>Hi!<br> Saya <span>Aryan Pratama Susanto</span></h1>
-        <p>Selamat datang di website portofolio saya. Saya adalah seorang pelajar di SMKN 8 Malang.</p>
-      </section>
+    <!-- Tombol Dark/Light Mode -->
+    <button id="toggle-mode">🌙</button>
 
-      <section id="about" style="display:none">
-        <h2>Tentang Saya</h2>
-        <p>Saya suka gaming, dengar musik dan nonton film</p>
-      </section>
+    <nav>
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-user"></i> About</a>
+      <a href="#"><i class="fas fa-code"></i> Portofolio</a>
+      <a href="mailto:aryan@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </aside>
 
-      <section id="portfolio" style="display:none">
-        <h2>Portofolio</h2>
-        <p>Projek-projek saya bisa dilihat di GitHub.</p>
-        <a href="https://github.com/4RYAN-sys" target="_blank">Kunjungi GitHub Saya</a>
-      </section>
+  <main>
+    <!-- Typewriter Text -->
+    <h1><span id="typewriter"></span></h1>
+    
+    <p class="desc">
+      Selamat datang di website portofolio saya. Saya adalah seorang pelajar di SMKN 5 Malang yang sedang belajar dan berkembang di dunia pemrograman.
+    </p>
 
-      <section id="contact" style="display:none">
-        <h2>Kontak Saya</h2>
-        <ul>
-          <li>Email: <a href="mailto:draconiczero229@gmail.com">Gmail</a></li>
-          <li>WhatsApp: <a href="https://wa.me/6285746868762" target="_blank">WA</a></li>
-          <li>GitHub: <a href="https://github.com/4RYAN-sys" target="_blank">Github</a></li>
-        </ul>
-      </section>
-    </main>
-  </div>
+    <p class="quote">"Teruslah berjuang karena ada yang menunggu keberhasilanmu!!."</p>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Website Portofolio</h3>
+        <p>Website ini dibuat dengan HTML, CSS, dan JavaScript untuk menampilkan identitas dan karya saya.</p>
+      </div>
+      <div class="card">
+        <h3>Desain UI/UX</h3>
+        <p>Mockup dan wireframe aplikasi sederhana dengan Balsamiq.</p>
+      </div>
+    </div>
+
+    <div class="socials">
+      <a href="https://wa.me/6285746868762" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/4RYAN-sys" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:draconiczero229@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <footer>
+      &copy; 2025 Aryan Pratama. All rights reserved.
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
