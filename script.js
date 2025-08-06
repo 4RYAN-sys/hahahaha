@@ -14,7 +14,8 @@ toggleBtn.onclick = () => {
 };
 
 document.querySelectorAll(".card").forEach(card =>
-  card.onclick = () => alert(` ${card.querySelector("h3").textContent}`)
+  card.onclick = () => alert(`Coming Soon ${card.querySelector("h3").textContent}`)
 );
+
 
 
